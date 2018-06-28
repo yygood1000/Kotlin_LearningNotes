@@ -1,8 +1,5 @@
-fun main() {
+fun main(args: Array<String>) {
+
 }
 
-
-fun setStringAllowNull(str: String?) {}
-
-fun setStringNotNull(str: String) {}
 
