@@ -1,26 +1,18 @@
 import java.util.*
 
-fun main(args: Array<String>) {
-    diaryGenerater("字符串模版测试内容")
-
+/**
+ * main函数，程序的入口
+ */
+fun main(args: Array<String>): Unit {
     equalsString()
 
     setArgsAllowsNull(null)
 
     // 这么写会报错
 //    setArgsNotNull(null)
-
-    println(whenExpression(4))
     printArray()
-
     useList()
     map()
-}
-
-// 字符串模版
-fun diaryGenerater(str: String) {
-    val temp = "我是模版，传入的String为 ：$str "
-    println(temp)
 }
 
 // 字符串比较
@@ -44,25 +36,8 @@ fun setArgsAllowsNull(str: String?) {
 fun setArgsNotNull(str: String) {
 }
 
-/**
- * when表达式
- * 类似与 switch ，但比 switch 强大
- */
-fun whenExpression(num: Int): String {
-    val result = when (num) {
-        0 -> "传入数字的中文是 ： 零"
-        1 -> "传入数字的中文是 ： 一"
-        2 -> "传入数字的中文是 ： 二"
-        3 -> "传入数字的中文是 ： 三"
-        4 -> "传入数字的中文是 ： 四"
-        5 -> "传入数字的中文是 ： 五"
-        else -> "找不到传入参数"
-    }
-    return result
-}
 
-
-// 数组的声明 与 循环的编写
+// array的声明 与 for循环的编写
 fun printArray() {
     // val nums1 = 1..10 相当于 java 的 int nums1[] = {1,2,3,4,5,6,7,8,9,10};
     val nums1: IntRange = 1..10
@@ -86,7 +61,7 @@ fun printArray() {
     println("数组的长度为${nums2.count()}")
 }
 
-// list 的声明与遍历
+// List集合 的声明与遍历
 fun useList() {
     val list = listOf("一", "二", "三", "四")
 
