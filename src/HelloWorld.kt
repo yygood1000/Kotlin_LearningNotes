@@ -4,36 +4,11 @@ import java.util.*
  * main函数，程序的入口
  */
 fun main(args: Array<String>): Unit {
-    equalsString()
+    println("Hello Kotlin")
 
-    setArgsAllowsNull(null)
-
-    // 这么写会报错
-//    setArgsNotNull(null)
     printArray()
     useList()
     map()
-}
-
-// 字符串比较
-fun equalsString() {
-    val name1 = "Yangy"
-    val name2 = "Yangy"
-    val name3 = "yangy"
-
-    println("name1 == name2 :    ${name1 == name2}\n")
-    println("name1 == name3 :    ${name1 == name3}\n")
-    println("name1.equals(name3) :    ${name1.equals(name3)}\n")
-    println("name1.equals(name3, true) :    ${name1.equals(name3, true)}\n")
-    println("name1.equals(name3, false) :    ${name1.equals(name3, false)}\n")
-}
-
-fun setArgsAllowsNull(str: String?) {
-    println("允许传入：$str")
-}
-
-@SuppressWarnings
-fun setArgsNotNull(str: String) {
 }
 
 

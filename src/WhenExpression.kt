@@ -25,7 +25,7 @@ private fun whenExpression(num: Int): String {
 }
 
 /**
- * when 表达式进行if判断
+ * when 表达式代替if判断
  */
 private fun whenExpression(str: String): String {
     val result = when {
