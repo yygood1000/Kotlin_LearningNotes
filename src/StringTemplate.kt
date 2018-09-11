@@ -1,6 +1,3 @@
-import android.text.TextUtils
-import android.util.Log
-
 /**
  * 字符串模板 主要用来进行字符串的拼接。类似于java的字符串‘+’加号拼接字符串
  */

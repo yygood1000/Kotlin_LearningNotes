@@ -33,7 +33,13 @@ fun printArray() {
     for (num in nums2 step 2) {
         print("$num ,")
     }
-    println("数组的长度为${nums2.count()}")
+//    println("数组的长度为" + nums2.count())
+
+    // 声明倒序数字数组
+    val array = 10 downTo 2
+    for (a in array) {
+
+    }
 }
 
 // List集合 的声明与遍历

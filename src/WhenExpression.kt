@@ -1,5 +1,3 @@
-import android.text.TextUtils
-
 fun main(args: Array<String>) {
     println(whenExpression(1))
     println(whenExpression(""))
